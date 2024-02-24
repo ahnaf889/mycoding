@@ -755,6 +755,10 @@ h1,h2,h3,h4,h5,h6,p,a,div,span,ul,ol{
     margin-top: -20px;
 }
 
+.carousel-indicators [data-bs-target]{
+    box-sizing: border-box;
+}
+
 /*=====================================================================
                           Work Part End
 ======================================================================= */
