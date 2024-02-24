@@ -1,0 +1,760 @@
+/* ======================================================================*/
+/* =======================comment Css Start==============================*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+
+@font-face{
+    font-family: circular;
+    src: url(./Circular-Std.ttf);
+}
+
+:root{
+    --circular: circular;
+    --dmsans: 'DM Sans', sans-serif;
+    --primary__background__color: #60E1CB;
+    --secondary__font__color: #7BC0E3;
+    --secondary__background__color: #E9FBF8;
+    --white__color: #FFFFFF;
+    --primary__font__color: #292525;
+    --black__color: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+img{
+    vertical-align: middle;
+}
+h1,h2,h3,h4,h5,h6,p,a,div,span,ul,ol{
+    margin: 0;
+    padding: 0;
+}
+/* ====================================================================*/
+/* =======================comment Css End==============================*/
+
+/*=====================================================================
+                          Nav Bar Start
+======================================================================= */
+#nav__bg{
+    background: var(--white__color);
+    padding: 30px 0;
+}
+
+.nav__pic {
+    padding-right: 375px;
+}
+
+.navItem{
+    column-gap: 30px;
+    padding-right: 52px;
+}
+
+.nav__item{
+    font-family: var(--dmsans);
+    font-size: 18px;
+    font-weight: 450;
+    line-height: 23px;
+    letter-spacing: 0px;
+    color: var(--primary__background__color);
+}
+
+.nav--item{
+    font-family: var(--circular);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 23px;
+    letter-spacing: 0px;
+    color: var(--black__color);
+}
+
+.nav__btn{
+    padding: 12px 27px;
+    border: none;
+    border-radius: 1000px;
+    font-family: var(--circular);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    color: var(--white__color);
+    background: #7BC0E3;
+    transition-duration: 0.30s;
+}
+
+.nav__btn:hover{
+    color: #7BC0E3;
+    background: var(--black__color);
+    -webkit-box-shadow: -4px 6px 6px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 6px 6px -3px rgba(0,0,0,0.75);
+    box-shadow: -4px 6px 6px -3px rgba(0,0,0,0.75);
+}
+/*=====================================================================
+                          Nav Bar End
+======================================================================= */
+/*=====================================================================
+                          Banner Part Srart
+======================================================================= */
+#banner__bg{
+    position: relative;
+    overflow: hidden;
+}
+
+#banner__bg::after {
+    position: absolute;
+    content: url('../Image/Body_musk.png');
+    bottom: -353px;
+    left: 56px;
+}
+
+.bg__banner{
+    position: relative;
+    overflow: hidden;
+}
+
+.bg__banner::after{
+    position: absolute;
+    content: url('../Image/Body.png');
+    width: 1203.01px;
+    height: 902.26px;
+    top: 0;
+    left: 845.98px;
+
+}
+
+.bannerLeft__title{
+    color: var(--primary__font__color);
+    width: 610.22px;
+    font-family: var(--circular);
+    font-size: 58px;
+    font-weight: 900;
+    line-height: 65px;
+    letter-spacing: -0.015em;
+    text-align: left;
+}
+
+.bannerLeft__edit{
+    color: var(--primary__background__color);
+}
+
+.bannerLeft__summary{
+    width: 672.4px;
+    font-family: var(--dmsans);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 31px;
+    letter-spacing: 0em;
+    color: var(--black__color);
+}
+
+.bannerBtnone{
+    width: 188px;
+    height: 68px;
+    border-radius: 40px;
+    border: none;
+    background: var(--primary__background__color);
+    font-family: var(--circular);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--white__color);
+    transition-duration: 0.30s;
+}
+
+.bannerBtnone:hover{
+    background: #0000ff;
+    -webkit-box-shadow: -4px 6px 6px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 6px 6px -3px rgba(0,0,0,0.75);
+    box-shadow: -4px 6px 6px -3px rgba(0,0,0,0.75);
+}
+
+.bannerBtnwto{
+    width: 188px;
+    height: 68px;
+    border-radius: 40px;
+    border: none;
+    background: none;
+    border: 1px solid #0f23254d;
+    font-family: var(--circular);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    color: var(--primary__background__color);
+}
+
+.bannerBtnwto:hover{
+    background: #0000ff;
+    transition-duration: 0.30s;
+    -webkit-box-shadow: -4px 6px 6px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 6px 6px -3px rgba(0,0,0,0.75);
+    box-shadow: -4px 6px 6px -3px rgba(0,0,0,0.75);
+}
+
+.banner__All{
+    margin: 196px 0 350px;
+}
+/*=====================================================================
+                          Banner Part End
+======================================================================= */
+/*=====================================================================
+                          Our Part Start
+======================================================================= */
+
+#our__bg{
+    background: var(--secondary__background__color);
+    padding: 118px 0 175px;
+}
+
+.our__heah{
+    background: var(--white__color);
+    border-radius: 10px;
+    padding: 96px 0 0 33px;
+    border-top: 7px solid var(--primary__background__color);
+}
+
+.ourHead__img{
+    position: relative;
+    z-index: 1;
+}
+
+.ourHead__img::after {
+    position: absolute;
+    content: "";
+    top: -26px;
+    left: -9px;
+    width: 45.92px;
+    height: 45.92px;
+    border-radius: 50%;
+    background: var(--secondary__background__color);
+    z-index: -1;
+}
+
+.ourHead__title{
+    color: var(--primary__font__color);
+    font-family: var(--circular);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+}
+
+.ourHead__summary{
+    width: 279px;
+    padding-right: 10px;
+    font-family: var(--dmsans);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    color: var(--black__color);
+    opacity: 0.8;
+}
+
+.ourHead__icon{
+    font-family: var(--dmsans);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: var(--secondary__font__color);
+}
+
+.ourHead__icon i{
+    padding-left: 5px;
+    font-weight: 800;
+}
+
+/*=====================================================================
+                          Our Part End
+======================================================================= */
+/*=====================================================================
+                          WorK Part Start
+======================================================================= */
+
+#work__bg{
+    background: var(--white__color);
+}
+
+.word__head{
+    padding: 80px 0 60px;
+}
+
+.workHead__text{
+    font-family: var(--circular);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.006em;
+    color: var(--secondary__font__color);
+}
+
+.workHead__one{
+    padding-bottom: 230px;
+}
+
+.workHead__title{
+    font-family: var(--circular);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+    color: var(--primary__font__color);
+}
+
+.work__btn{
+    font-family: var(--circular);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: var(--secondary__font__color);
+    width: 290.08px;
+    height: 69.51px;
+    border-radius: 1000px;
+    border: 2px solid var(--secondary__font__color);
+    background: transparent;
+}
+
+.btn-work{
+    border: none;
+}
+
+#web__bg{
+    background: var(--primary__background__color);
+    height: 437.33px;
+}
+
+.hello{
+    position: relative;
+}
+
+.head__web {
+    position: absolute;
+    top: -132px;
+    left: 0;
+}
+
+.webHead__summary{
+    width: 400px;
+    font-family: var(--circular);
+    font-size: 15px;
+    font-weight: 450;
+    line-height: 31px;
+    letter-spacing: 0em;
+    color: var(--black__color);
+}
+
+.web__musk{
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.web__musk::before {
+    position: absolute;
+    content: url('../Image/musk-00.png');
+    top: 51%;
+    left: 5%;
+    z-index: -1;
+}
+
+.owow{
+    color: var(--primary__background__color) !important;
+    text-shadow: 1px 1px 2px red, 0 0 1em red, 0 0 0.2em red;
+    font-size: 30px;
+    font-weight: 500;
+    padding-right: 195px;
+    margin-top: -50px;
+    margin-bottom: 97px;
+    position: relative;
+    z-index: 1;
+}
+
+.owow::after{
+    position: absolute;
+    content: "";
+    top: -15px;
+    right: 178px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: -1;
+}
+
+.wowo{
+    color: var(--primary__background__color) !important;
+    text-shadow: 1px 1px 2px red, 0 0 1em red, 0 0 0.2em red;
+    font-size: 30px;
+    font-weight: 500;
+    padding-left: 195px;
+    margin-top: -50px;
+    margin-bottom: 97px;
+    position: relative;
+    z-index: 1;
+}
+
+.wowo::after {
+    position: absolute;
+    content: "";
+    top: -15px;
+    left: 178px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    z-index: -1;
+}
+
+/*=====================================================================
+                          Work Part End
+======================================================================= */
+/*=====================================================================
+                          Into Part Start
+======================================================================= */
+
+#into__bg{
+    padding-top: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.see__all {
+    position: absolute;
+    top: 0;
+    left: 860px;
+}
+
+.see__all::after {
+    position: absolute;
+    content: url(../Image/musk-00.png);
+    top: -196%;
+    left: -519%;
+}
+
+.see__all::before {
+    position: absolute;
+    content: url(../Image/musk-00.png);
+    top: -135%;
+    right: -401%;
+}
+
+.into__btn{
+    width: 211.09px;
+    height: 74.67px;
+    border-radius: 1000px;
+    background: var(--black__color);
+    color: var(--white__color);
+    border: none;
+    font-family: var(--circular);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0em;
+    transition-duration: 0.20s;
+}
+
+.into__btn:hover{
+    background: var(--secondary__font__color);
+    color: var(--black__color);
+}
+
+/*=====================================================================
+                          Into Part Start
+======================================================================= */
+
+.into__title{
+    font-family: Abhaya Libre ExtraBold;
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 57px;
+    letter-spacing: 0em;
+    color: var(--primary__font__color);
+}
+
+.intoTitile__edit{
+    color: var(--primary__background__color);
+}
+
+.into__summary{
+    color: var(--black__color);
+    font-family: var(--dmsans);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0em;
+}
+
+.into__number{
+    width: 82.24px;
+    height: 82.24px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    font-family: var(--circular);
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 40px;
+    letter-spacing: 0em;
+    color: var(--secondary__font__color);
+    transition-duration: 0.30s;
+}
+
+.intNumber__edit{
+    display: flex;
+    padding-left: 33px;
+    padding-top: 20px;
+}
+
+.into__number:hover{
+    background: var(--secondary__font__color);
+    color: var(--white__color);
+}
+
+.into__dn{
+    margin-top: 75px;
+}
+
+.intu__scound{
+    margin-left: 25px;
+    position: relative;
+}
+
+.intu__scound::after {
+    position: absolute;
+    content: url(../Image/musk-00.png);
+    left: -94%;
+    bottom: -28%;
+}
+
+.intu__scound::before {
+    position: absolute;
+    content: url(../Image/musk-00.png);
+    right: -87%;
+    bottom: 31%;
+}
+
+.intoScound__title{
+    font-family: Abhaya Libre ExtraBold;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: var(--primary__background__color);
+}
+
+.intoScound__summary{
+    color: var(--black__color);
+    font-family: var(--dmsans);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    padding-right: 10px;
+}
+
+.into__mt{
+    margin-top: 30px;
+}
+
+/*=====================================================================
+                          Into Part End
+======================================================================= */
+/*=====================================================================
+                          Happy Part Start
+======================================================================= */
+
+#happy__bg{
+    background-image: url(../Image/group__hello.png);
+    background-repeat: no-repeat;
+}
+
+.happy__head{
+    padding: 160px 0;
+}
+
+.happy__title{
+    color: var(--black__color);
+    font-family: var(--circular);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+}
+
+.happy__summariy{
+    color: var(--black__color);
+    font-family: var(--dmsans);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+}
+
+.happy__btn{
+    background: var(--primary__font__color);
+    width: 411px;
+    height: 84px;
+    border-radius: 40px;
+    border: none;
+    color: var(--white__color);
+    font-family: Poppins;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    letter-spacing: 0em;
+    transition-duration: 0.30s;
+}
+
+.happy__btn:hover{
+    background: var(--white__color);
+    color: var(--black__color);
+    box-shadow: -3px 13px 13px 2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 13px 13px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -3px 13px 13px 2px rgba(0,0,0,0.75);
+}
+/*=====================================================================
+                          Happy Part End
+======================================================================= */
+/*=====================================================================
+                          Work Part Start
+======================================================================= */
+
+#work__bg{
+    margin: 175px 0 145px;
+    background: var(--white__color);
+}
+
+.work__text{
+    color: var(--secondary__font__color);
+    font-family: var(--circular);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.006em;
+}
+
+.work__title{
+    color: var(--primary__font__color);
+    font-family: var(--circular);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+}
+
+.colHead{
+    height: 344.35px;
+    background: #FDFDFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 10px solid #ff0000;
+}
+
+.colHead1{
+    height: 344.35px;
+    background: #FDFDFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 10px solid #800080;
+}
+
+.colHead2{
+    height: 344.35px;
+    background: #FDFDFF;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 10px solid #000000;
+}
+
+.work__number{
+    padding-top: 67px;
+    color: var(--black__color);
+    font-family: var(--circular);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.work__item{
+    column-gap: 5px;
+}
+
+.workItem{
+    color: #FBBE36;
+    font-size: 20px;
+}
+
+.work__summary{
+    font-family: var(--circular);
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 43px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--primary__font__color);
+}
+
+.work__after{
+    margin-right: 130px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--white__color);
+    box-shadow: -2px 1px 19px 0px rgba(0,0,0,0.69);
+    -webkit-box-shadow: -2px 1px 19px 0px rgba(0,0,0,0.69);
+    -moz-box-shadow: -2px 1px 19px 0px rgba(0,0,0,0.69);
+}
+
+.work__befor{
+    margin-left: 130px;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: var(--white__color);
+    box-shadow: -2px 1px 19px 0px rgba(0,0,0,0.69);
+    -webkit-box-shadow: -2px 1px 19px 0px rgba(0,0,0,0.69);
+    -moz-box-shadow: -2px 1px 19px 0px rgba(0,0,0,0.69);
+}
+
+.work__logo{
+    margin-top: 50%;
+    transform: translatey(-50%);
+    color: purple;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.work__position{
+    bottom: -70px;
+    color: var(--white__color);
+}
+
+.workimage1{
+    padding-left: 815px;
+}
+
+.workimage2{
+    padding-left: 961px;
+}
+
+.workimage3{
+    padding-left: 1060px;
+}
+
+.workBtn{
+    margin-top: -20px;
+}
+
+/*=====================================================================
+                          Work Part End
+======================================================================= */
