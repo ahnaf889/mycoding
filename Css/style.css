@@ -762,3 +762,57 @@ h1,h2,h3,h4,h5,h6,p,a,div,span,ul,ol{
 /*=====================================================================
                           Work Part End
 ======================================================================= */
+/*=====================================================================
+                          Blog Part Start
+======================================================================= */
+
+#blog__bg{
+    margin: 180px 0 150px;
+    background: var(--white__color);
+}
+
+.blog__text{
+    color: var(--secondary__font__color);
+    font-family: var(--circular);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.006em;
+}
+
+.blog__title{
+    color: var(--primary__font__color);
+    font-family: var(--circular);
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 61px;
+    letter-spacing: 0em;
+}
+
+.blog__summary{
+    max-width: 542.87px;
+    color: var(--black__color);
+    font-family: var(--dmsans);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 39px;
+    letter-spacing: 0em;
+}
+
+.blgo__btn{
+    width: 194.67px;
+    height: 65.22px;
+    border-radius: 40px;
+    border: 2px solid var(--secondary__font__color);
+    background: transparent;
+    color: var(--secondary__font__color);
+    font-family: Circular Std;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+}
+
+/*=====================================================================
+                          Blog Part End
+======================================================================= */
